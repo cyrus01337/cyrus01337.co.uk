@@ -1,0 +1,14 @@
+---
+import { type BlogsFrontmatter as Frontmatter, type WithFrontmatter } from "@/content/types";
+import BaseLayout from "@/layouts/base.astro";
+
+type Props = WithFrontmatter<Frontmatter>;
+---
+
+<BaseLayout class="flex justify-center px-6 pt-6 lg:px-0 lg:py-8">
+    <article class="prose lg:prose-lg">
+        <main>
+            <slot />
+        </main>
+    </article>
+</BaseLayout>

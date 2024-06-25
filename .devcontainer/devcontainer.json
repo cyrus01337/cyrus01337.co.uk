@@ -19,6 +19,7 @@
                 "mikestead.dotenv",
                 "neotan.vscode-auto-restart-typescript-eslint-servers",
                 "streetsidesoftware.code-spell-checker",
+                "unifiedjs.vscode-mdx",
                 "wayou.vscode-todo-highlight",
                 "wix.vscode-import-cost"
             ],

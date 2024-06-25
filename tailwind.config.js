@@ -1,3 +1,4 @@
+import typography from "@tailwindcss/typography";
 import daisyUI from "daisyui";
 import defaultTheme from "tailwindcss/defaultTheme";
 
@@ -40,5 +41,5 @@ export default {
             },
         },
     },
-    plugins: [daisyUI],
+    plugins: [typography, daisyUI],
 };
