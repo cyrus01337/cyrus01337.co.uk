@@ -1,7 +1,8 @@
 {
     "name": "cyrus01337.co.uk",
+    "description": "My personal site for you to ogle, or a way for you to determine how you can contact me",
     "type": "module",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
