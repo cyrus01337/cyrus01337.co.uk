@@ -10,19 +10,19 @@ const properties = Astro.props;
 ---
 
 <a
-    class="group card box-border w-96 rounded-2xl bg-base-100 hover:cursor-pointer"
+    class="group card box-border w-96 rounded-2xl bg-base-100 shadow-lg transition-transform active:scale-95 lg:hover:cursor-pointer"
     href={properties.href}
 >
-    <figure class="relative rounded-2xl">
+    <figure class="relative rounded-t-2xl lg:rounded-b-2xl">
         <img
-            class="transition-filter group-hover:brightness-30 brightness-100 duration-300"
+            class="brightness-100 transition-filter duration-300 lg:group-hover:brightness-30"
             src={properties.graphic}
             alt="Shoes"
         />
     </figure>
 
     <div
-        class="card-body absolute h-full w-full text-left text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        class="card-body h-full w-full p-4 text-left lg:absolute lg:p-6 lg:text-white lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100"
     >
         <h2 class="card-title">{properties.title}</h2>
 
