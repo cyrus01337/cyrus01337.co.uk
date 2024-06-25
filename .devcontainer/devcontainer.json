@@ -21,7 +21,10 @@
                 "streetsidesoftware.code-spell-checker",
                 "wayou.vscode-todo-highlight",
                 "wix.vscode-import-cost"
-            ]
+            ],
+            "settings": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            }
         }
     },
     "features": {
