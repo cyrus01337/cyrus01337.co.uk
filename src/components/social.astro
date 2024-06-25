@@ -1,0 +1,31 @@
+---
+interface Props {
+    description: string;
+    href: string;
+    graphic: string;
+    title: string;
+}
+
+const properties = Astro.props;
+---
+
+<a
+    class="group card box-border w-96 rounded-2xl bg-base-100 hover:cursor-pointer"
+    href={properties.href}
+>
+    <figure class="relative rounded-2xl">
+        <img
+            class="transition-filter group-hover:brightness-30 brightness-100 duration-300"
+            src={properties.graphic}
+            alt="Shoes"
+        />
+    </figure>
+
+    <div
+        class="card-body absolute h-full w-full text-left text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+    >
+        <h2 class="card-title">{properties.title}</h2>
+
+        <span>{properties.description}</span>
+    </div>
+</a>

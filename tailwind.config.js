@@ -9,8 +9,18 @@ export default {
     },
     theme: {
         extend: {
+            brightness: {
+                30: "0.30",
+            },
             fontFamily: {
                 sans: ["Inter Tight Variable", ...defaultTheme.fontFamily.sans],
+            },
+            transitionDuration: {
+                600: "600ms",
+            },
+            transitionProperty: {
+                filter: "filter",
+                "flex-basis": "flex-basis",
             },
         },
     },
