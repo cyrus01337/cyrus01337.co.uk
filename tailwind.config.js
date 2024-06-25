@@ -21,6 +21,7 @@ export default {
             transitionProperty: {
                 filter: "filter",
                 "flex-basis": "flex-basis",
+                size: "height, width",
             },
         },
     },
