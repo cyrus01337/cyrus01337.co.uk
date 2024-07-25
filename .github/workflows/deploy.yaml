@@ -21,7 +21,7 @@ jobs:
               with:
                   version: latest
 
-            - run: biome ci --changed --since=main --linter-enabled=false
+            - run: biome ci --linter-enabled=false
 
     build:
         runs-on: ubuntu-latest
