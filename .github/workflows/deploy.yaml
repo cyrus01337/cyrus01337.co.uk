@@ -24,6 +24,7 @@ jobs:
             - run: biome ci --linter-enabled=false
 
     build:
+        needs: check
         runs-on: ubuntu-latest
         steps:
             - uses: withastro/action@v2
