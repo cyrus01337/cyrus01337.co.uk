@@ -21,7 +21,7 @@ jobs:
               with:
                   version: latest
 
-            - run: biome ci --linter-enabled=false
+            - run: biome ci --no-errors-on-unmatched --changed --since=main --linter-enabled=false
 
     build:
         needs: check

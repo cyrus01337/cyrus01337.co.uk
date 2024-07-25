@@ -1,7 +1,6 @@
-import { z as zod } from "astro:content";
+import type { z as zod } from "astro:content";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { blogsSchema } from "@/content/config";
+import type { blogsSchema } from "@/content/config";
 
 export type BlogsFrontmatter = zod.infer<typeof blogsSchema>;
 
