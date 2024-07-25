@@ -9,7 +9,7 @@
         "build": "astro check && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "format": "biome format --write .",
+        "format": "biome format --write --no-errors-on-unmatched",
         "lint": "eslint .",
         "lint:formatting": "biome check --changed --since=main --linter-enabled=false",
         "prepare": "husky"
