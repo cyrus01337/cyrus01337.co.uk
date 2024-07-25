@@ -1,11 +1,17 @@
 ---
 import Card from "@/components/card.astro";
 import Github from "@/components/github.astro";
+import ThemeController from "@/components/theme-controller.astro";
 import BaseLayout from "@/layouts/base.astro";
 ---
 
 <BaseLayout>
-    <Github />
+    <div
+        class="absolute right-2 top-2 box-border flex h-10 items-center justify-center gap-0.5 bg-transparent"
+    >
+        <ThemeController />
+        <Github />
+    </div>
 
     <div class="hero min-h-screen bg-base-200">
         <div class="hero-content flex flex-col text-center">

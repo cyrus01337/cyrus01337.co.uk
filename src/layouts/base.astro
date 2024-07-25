@@ -9,7 +9,7 @@ const { class: className = null } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html data-theme="light" lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,6 +35,22 @@ const { class: className = null } = Astro.props;
         <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
 
         <title>Cyrus's Personal Site</title>
+
+        <script is:inline>
+            const theme = localStorage.getItem("theme");
+
+            if (theme === null) {
+                document.documentElement.setAttribute("data-theme", "light");
+            } else {
+                document.documentElement.setAttribute("data-theme", theme);
+            }
+        </script>
+
+        <script>
+            import { themeChange } from "theme-change";
+
+            themeChange();
+        </script>
     </head>
 
     <body>
