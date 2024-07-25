@@ -2,15 +2,16 @@
     "name": "cyrus01337.co.uk",
     "description": "My personal site for you to ogle, or a way for you to determine how you can contact me",
     "type": "module",
-    "version": "1.0.1",
+    "version": "1.1.1",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro check && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "format": "prettier --write .",
+        "format": "biome format --write .",
         "lint": "eslint .",
+        "lint:formatting": "biome check .",
         "prepare": "husky"
     },
     "dependencies": {
@@ -22,22 +23,17 @@
         "typescript": "^5.5.2"
     },
     "devDependencies": {
+        "@biomejs/biome": "1.8.3",
         "@eslint/js": "^9.5.0",
         "@fontsource-variable/inter-tight": "^5.0.21",
-        "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
         "@tailwindcss/typography": "^0.5.13",
         "@typescript-eslint/parser": "^7.17.0",
         "cssnano": "^7.0.3",
         "daisyui": "^4.12.8",
         "eslint": "^9.5.0",
-        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-astro": "^1.2.3",
         "husky": "^9.0.11",
         "lint-staged": "^15.2.7",
-        "prettier": "^3.3.2",
-        "prettier-plugin-astro": "^0.14.0",
-        "prettier-plugin-sort-json": "^4.0.0",
-        "prettier-plugin-tailwindcss": "^0.6.5",
         "theme-change": "^2.5.0",
         "tsc-files": "^1.1.4",
         "typescript-eslint": "^8.0.0-alpha.52"

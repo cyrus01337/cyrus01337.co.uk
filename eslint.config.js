@@ -1,11 +1,9 @@
 import javascript from "@eslint/js";
-import prettier from "eslint-config-prettier";
 import astro from "eslint-plugin-astro";
 import typescript from "typescript-eslint";
 
 export default typescript.config(
     javascript.configs.recommended,
-    prettier,
     ...typescript.configs.recommended,
     ...typescript.configs.stylistic,
     ...astro.configs.recommended,
