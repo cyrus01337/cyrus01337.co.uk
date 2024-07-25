@@ -9,12 +9,14 @@
             "**/bun.lockb",
             "**/public",
             "**/node_modules/",
+            ".astro/",
             ".devcontainer/devcontainer.json",
+            "archive/"
         ],
         "indentStyle": "space",
         "indentWidth": 4,
         "lineEnding": "lf",
-        "lineWidth": 100,
+        "lineWidth": 100
     },
     "javascript": {
         "formatter": {
@@ -26,9 +28,9 @@
             "quoteProperties": "asNeeded",
             "quoteStyle": "double",
             "semicolons": "always",
-            "trailingCommas": "all",
-        },
+            "trailingCommas": "all"
+        }
     },
     "organizeImports": { "enabled": true },
-    "overrides": [{ "include": ["*.astro"] }],
+    "overrides": [{ "include": ["*.astro"] }]
 }
