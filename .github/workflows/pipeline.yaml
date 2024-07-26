@@ -25,7 +25,7 @@ jobs:
 
             - run: biome ci --no-errors-on-unmatched --changed --since=main \
                 --linter-enabled=false --config-path \
-                $PWD/external/configurations/biome/biome.jsonc
+                $PWD/external/configurations/biome
 
     build:
         needs: check
