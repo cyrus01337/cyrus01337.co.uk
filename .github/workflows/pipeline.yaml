@@ -10,12 +10,11 @@ permissions:
     pages: write
     id-token: write
 
-variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-
 jobs:
     check:
         runs-on: ubuntu-latest
+        variables:
+            GIT_SUBMODULE_STRATEGY: recursive
         steps:
             - uses: actions/checkout@v4
 
