@@ -1,1 +1,1 @@
-external/configurations/docker/bun-devcontainer.dockerfile
+../external/configurations/docker/bun-devcontainer.dockerfile
