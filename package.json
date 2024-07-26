@@ -10,7 +10,7 @@
         "preview": "astro preview",
         "astro": "astro",
         "format": "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none && biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none",
-        "lint": "eslint .",
+        "lint": "eslint . && tsc --noEmit",
         "lint:formatting": "biome check --changed --since=main --linter-enabled=false",
         "prepare": "husky"
     },
