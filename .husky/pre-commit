@@ -1,1 +1,1 @@
-bunx lint-staged
+../external/configurations/husky/pre-commit
