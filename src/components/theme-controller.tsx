@@ -1,6 +1,5 @@
 import Moon from "@/components/moon";
 import Sun from "@/components/sun";
-import { useEffect } from "react";
 
 const LIGHT_THEME = "light";
 const DARK_THEME = "dark";
