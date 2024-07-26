@@ -47,7 +47,7 @@ export default typescript.config(
         rules: reactHooks.configs.recommended.rules,
     },
     {
-        ignores: [".astro/", "dist/", "external/", "node_modules/"],
+        ignores: [".astro/", ".husky/", "dist/", "external/", "node_modules/"],
     },
     {
         rules: {
