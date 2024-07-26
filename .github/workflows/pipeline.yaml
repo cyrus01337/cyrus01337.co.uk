@@ -10,6 +10,9 @@ permissions:
     pages: write
     id-token: write
 
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
 jobs:
     check:
         runs-on: ubuntu-latest
