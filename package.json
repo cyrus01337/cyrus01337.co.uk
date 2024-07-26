@@ -9,9 +9,9 @@
         "build": "astro check && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "format": "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.jsonc && biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.jsonc",
+        "format": "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json && biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json",
         "lint": "eslint . && tsc --noEmit",
-        "lint:formatting": "biome check --changed --since=main --linter-enabled=false --config-path external/configurations/biome/biome.jsonc",
+        "lint:formatting": "biome check --changed --since=main --linter-enabled=false --config-path external/configurations/biome/biome.json",
         "prepare": "bun .husky/install.js"
     },
     "dependencies": {

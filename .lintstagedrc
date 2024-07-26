@@ -1,16 +1,16 @@
 {
     "*.{ts,astro}": [
-        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none",
-        "biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none",
+        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json",
+        "biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json",
         "eslint",
         "tsc-files"
     ],
     "*.{js,mjs,cjs}": [
-        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none",
-        "biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none",
+        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json",
+        "biome lint --write --unsafe --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json",
         "eslint"
     ],
     "*.{json,md}": [
-        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none"
+        "biome format --write --skip-errors --no-errors-on-unmatched --changed --since=main --log-level=none --config-path external/configurations/biome/biome.json"
     ]
 }
