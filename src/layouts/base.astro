@@ -39,7 +39,7 @@ const { class: className = null } = Astro.props;
         <script is:inline>
             const theme = localStorage.getItem("theme");
 
-            if (theme === null) {
+            if (!theme) {
                 document.documentElement.setAttribute("data-theme", "light");
             } else {
                 document.documentElement.setAttribute("data-theme", theme);
