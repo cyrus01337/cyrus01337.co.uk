@@ -21,9 +21,9 @@ jobs:
               with:
                   version: latest
 
-            - run: biome ci --no-errors-on-unmatched --changed --since=main
-            --linter-enabled=false --config-path
-            external/configurations/biome/biome.jsonc
+            - run: biome ci --no-errors-on-unmatched --changed --since=main \
+                --linter-enabled=false --config-path \
+                external/configurations/biome/biome.jsonc
 
     build:
         needs: check
