@@ -5,13 +5,13 @@
         "enabled": true,
         "formatWithErrors": false,
         "ignore": [
-            "**/build",
-            "**/bun.lockb",
-            "**/public",
-            "**/node_modules/",
             ".astro/",
             ".devcontainer/devcontainer.json",
-            "archive/"
+            "archive/",
+            "build/",
+            "bun.lockb",
+            "node_modules/",
+            "public/"
         ],
         "indentStyle": "space",
         "indentWidth": 4,
