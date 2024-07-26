@@ -24,7 +24,10 @@
                 "wix.vscode-import-cost"
             ],
             "settings": {
-                "editor.defaultFormatter": "esbenp.prettier-vscode"
+                "editor.defaultFormatter": "biomejs.biome",
+                "editor.codeActionsOnSave": {
+                    "source.organizeImports.biome": "explicit"
+                }
             }
         }
     },
