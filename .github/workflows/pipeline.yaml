@@ -23,9 +23,8 @@ jobs:
               with:
                   version: latest
 
-            - run: biome ci --no-errors-on-unmatched --changed --since=main \
-                --linter-enabled=false --config-path \
-                $PWD/external/configurations/biome
+            - run: biome ci --no-errors-on-unmatched --changed --linter-enabled=false \
+                --config-path $PWD/external/configurations/biome/biome.json
 
     build:
         needs: check
