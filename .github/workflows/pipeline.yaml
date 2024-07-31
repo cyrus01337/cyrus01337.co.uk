@@ -32,7 +32,9 @@ jobs:
         env:
             HUSKY: 0
         steps:
-            # - uses: actions/checkout@v4
+            - uses: actions/checkout@v4
+              with:
+                  submodules: "recursive"
             - uses: withastro/action@v2
 
     deploy:
