@@ -12,7 +12,7 @@
 		"format": "biome check --write --no-errors-on-unmatched --linter-enabled=false --config-path external/configurations/biome/biome.json",
 		"lint": "eslint . && tsc --noEmit",
 		"lint:formatting": "biome check --linter-enabled=false --config-path external/configurations/biome/biome.json",
-		"prepare": "ls && bun ./.husky/install.js"
+		"prepare": "bun .husky/install.js"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
