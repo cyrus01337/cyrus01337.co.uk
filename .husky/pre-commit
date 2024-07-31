@@ -1,1 +1,1 @@
-bunx lint-staged --debug --config $PWD/external/configurations/lint-staged/biome/.lintstagedrc
+bunx lint-staged --config $PWD/external/configurations/lint-staged/biome/.lintstagedrc
