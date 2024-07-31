@@ -1,54 +1,54 @@
 {
-    "name": "cyrus01337.co.uk",
-    "description": "My personal site for you to ogle, or a way for you to determine how you can contact me",
-    "type": "module",
-    "version": "1.1.2",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro check && astro build",
-        "preview": "astro preview",
-        "astro": "astro",
-        "format": "biome check --write --no-errors-on-unmatched --linter-enabled=false --config-path external/configurations/biome/biome.json",
-        "lint": "eslint . && tsc --noEmit",
-        "lint:formatting": "biome check --linter-enabled=false --config-path external/configurations/biome/biome.json",
-        "prepare": "bun .husky/install.js"
-    },
-    "dependencies": {
-        "@astrojs/check": "^0.7.0",
-        "@astrojs/mdx": "^3.1.2",
-        "@astrojs/preact": "^3.5.1",
-        "@astrojs/react": "^3.6.0",
-        "@astrojs/tailwind": "^5.1.0",
-        "@types/react": "^18.3.3",
-        "@types/react-dom": "^18.3.0",
-        "astro": "^4.11.1",
-        "preact": "^10.23.1",
-        "tailwindcss": "^3.4.4",
-        "typescript": "^5.5.2"
-    },
-    "devDependencies": {
-        "@biomejs/biome": "1.8.3",
-        "@eslint/js": "^9.5.0",
-        "@fontsource-variable/inter-tight": "^5.0.21",
-        "@tailwindcss/typography": "^0.5.13",
-        "@typescript-eslint/parser": "^7.17.0",
-        "cssnano": "^7.0.3",
-        "daisyui": "^4.12.8",
-        "eslint": "^9.5.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-astro": "^1.2.3",
-        "eslint-plugin-react": "^7.35.0",
-        "eslint-plugin-react-hooks": "^4.6.2",
-        "husky": "^9.0.11",
-        "lint-staged": "^15.2.7",
-        "theme-change": "^2.5.0",
-        "tsc-files": "^1.1.4",
-        "typescript-eslint": "^8.0.0-alpha.52"
-    },
-    "overrides": {
-        "react": "npm:@preact/compat@latest",
-        "react-dom": "npm:@preact/compat@latest"
-    },
-    "trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"]
+	"name": "cyrus01337.co.uk",
+	"description": "My personal site for you to ogle, or a way for you to determine how you can contact me",
+	"type": "module",
+	"version": "1.1.2",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "biome check --write --no-errors-on-unmatched --linter-enabled=false --config-path external/configurations/biome/biome.json",
+		"lint": "eslint . && tsc --noEmit",
+		"lint:formatting": "biome check --linter-enabled=false --config-path external/configurations/biome/biome.json",
+		"prepare": "ls && bun ./.husky/install.js"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.7.0",
+		"@astrojs/mdx": "^3.1.2",
+		"@astrojs/preact": "^3.5.1",
+		"@astrojs/react": "^3.6.0",
+		"@astrojs/tailwind": "^5.1.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"astro": "^4.11.1",
+		"preact": "^10.23.1",
+		"tailwindcss": "^3.4.4",
+		"typescript": "^5.5.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@eslint/js": "^9.5.0",
+		"@fontsource-variable/inter-tight": "^5.0.21",
+		"@tailwindcss/typography": "^0.5.13",
+		"@typescript-eslint/parser": "^7.17.0",
+		"cssnano": "^7.0.3",
+		"daisyui": "^4.12.8",
+		"eslint": "^9.5.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-astro": "^1.2.3",
+		"eslint-plugin-react": "^7.35.0",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.7",
+		"theme-change": "^2.5.0",
+		"tsc-files": "^1.1.4",
+		"typescript-eslint": "^8.0.0-alpha.52"
+	},
+	"overrides": {
+		"react": "npm:@preact/compat@latest",
+		"react-dom": "npm:@preact/compat@latest"
+	},
+	"trustedDependencies": ["@biomejs/biome", "esbuild", "sharp"]
 }
